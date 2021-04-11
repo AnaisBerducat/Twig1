@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+{% block title %} 
+    {{ parent() }} - Accueil 
+{% endblock %} 
+{% block content %} 
+    {% for activity in activities %} 
+        {% include 'component/_navbar.html.twig' %} 
+    {% endfor %} 
+{% endblock %}
